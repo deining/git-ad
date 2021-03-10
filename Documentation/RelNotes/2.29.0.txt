@@ -138,8 +138,8 @@ Performance, Internal Implementation, Development Support etc.
 
  * Dev support to limit the use of test_must_fail to only git commands.
 
- * While packing many objects in a repository with a promissor remote,
-   lazily fetching missing objects from the promissor remote one by
+ * While packing many objects in a repository with a promisor remote,
+   lazily fetching missing objects from the promisor remote one by
    one may be inefficient---the code now attempts to fetch all the
    missing objects in batch (obviously this won't work for a lazy
    clone that lazily fetches tree objects as you cannot even enumerate
@@ -148,7 +148,7 @@ Performance, Internal Implementation, Development Support etc.
  * The pretend-object mechanism checks if the given object already
    exists in the object store before deciding to keep the data
    in-core, but the check would have triggered lazy fetching of such
-   an object from a promissor remote.
+   an object from a promisor remote.
 
  * The argv_array API is useful for not just managing argv but any
    "vector" (NULL-terminated array) of strings, and has seen adoption
