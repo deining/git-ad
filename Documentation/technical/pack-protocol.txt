@@ -292,7 +292,7 @@ operations. An object that does not meet a filter-spec value is
 omitted unless explicitly requested in a 'want' line. See `rev-list`
 for possible filter-spec values.
 
-Once all the 'want's and 'shallow's (and optional 'deepen') are
+Once all the 'wants' and 'shallows' (and optional 'deepen') are
 transferred, clients MUST send a flush-pkt, to tell the server side
 that it is done sending the list.
 
